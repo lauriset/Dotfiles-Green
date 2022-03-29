@@ -1,0 +1,55 @@
+conky.config = {
+
+  update_interval = 1,
+  total_run_times = 0,
+  net_avg_samples = 1,
+  cpu_avg_samples = 1,
+
+  imlib_cache_size = 0,
+  double_buffer = true,
+  no_buffers = true,
+
+
+  use_xft = true,
+  xftfont = 'AvantGarde LT Medium:size=80',
+  override_utf8_locale = true,
+  text_buffer_size = 2048,
+
+
+  own_window_class = 'Conky',
+  own_window = true,
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+
+  alignment = 'tr',
+  gap_x = 20,
+  gap_y = 160,
+  maximum_width = 300,
+  minimum_height = 100,
+  minimum_width = 300,
+
+
+  default_bar_size = 90, 28,
+
+
+  draw_shades = false,
+
+  default_color = '6eb53c',
+  default_shade_color = 'ffffff',
+  color0 = 'ffffff',
+  color1 = 'ffffff',
+  color2 = 'ffffff',
+}
+
+
+
+
+conky.text = [[
+${font AvantGarde LT Medium:size=25}${voffset 24} ${goto 46}${time %H}${goto 120}${time %M}
+${image ~/.conky/Cpu/image/b.png -p 0,0 -s 300x100}
+${voffset -112} ${goto 239}${font AvantGarde LT Medium:size=8}${time %A} ${font}
+${font AvantGarde LT Medium:size=25}${voffset -8}${goto 240}${time %d}
+
+]]
